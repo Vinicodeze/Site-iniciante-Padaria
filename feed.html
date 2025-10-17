@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Formulário de Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1>
+    </header>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Basicas</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required><br><br>
+
+            <label for="produto">Produtos</label>
+            <select id="produto" name="produto">
+                <option>🥖 Pães tradicionais</option>
+                <option>🍰 Doces e bolos</option>
+                <option>🥐 Salgados</option>
+                <option>👥 Atendimento</option>
+                <option>🏠 Ambiente</option>
+                <option>💲 Preços</option>
+            </select><br><br>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Avalição</legend>
+            <p>Como você avalia nosso serviço</p>
+
+            <label for="exclente">🌟 Exclente</label>
+            <input type="radio" id="exclente" name="avaliacao" value="exclente" required>
+
+
+            <label for="bom">👍Bom</label>
+            <input type="radio" id="bom" name="avaliacao" value="bom" required><br><br>
+
+            <label for="regular">😐 Regular</label>
+            <input type="radio" id="regular" name="avaliacao" value="regular" required><br><br> 
+
+            <label for="ruim">👎 Ruim</label>
+            <input type="radio" id="ruim" name="avaliacao" value="ruim" required><br><br>
+
+            <h3>Comentarios:</h3>
+            <label for="comentarios">
+                <textarea id="comentarios" name="comentarios" placeholder="Deixe seu comentario"></textarea>
+            </label><br><br>
+            
+            <label for="recomenda">👍 Recomendaria para amigos?</label>
+            <input type="checkbox" id="recomenda" name="recomenda"><br><br>
+
+            
+            <input type="checkbox" id="publica" name="publica">
+            <label for="publica">📰 Autoriza publicação do depoimento?</label><br><br>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar Feedback">
+    </form>
+
+    <p><a href="index.html">⬅️ Voltar ao site principal</a></p>
+</body>
+</html>
