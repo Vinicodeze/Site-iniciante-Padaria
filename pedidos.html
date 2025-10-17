@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedidos.css">
+
+    <title>Faça seu Pedido aqui!</title>
+</head>
+<body>
+    <header>
+        <h1>Aqui faremos a magica acontecer</h1>
+        <p>Aqui é onde você pode fazer seus pedidos</p>
+    </header>
+
+    <form action="processa_formulario.php" method="post">
+        <fieldset>
+            <legend>Dados do Cliente</legend>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+              <label for="telefone">Telefone: *</label><br>
+              <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required><br><br>
+
+             <label for="email">E-mail: *</label><br>
+              <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com"><br><br>
+              
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Detalhes do pedido</legend>
+            <p>Tipo de Produtos:</p>
+
+            <label for="bolo">🍰 Bolo</label>
+            <input type="radio" id="bolo" name="tipo" value="bolo" required><br><br>
+
+            <label for="torta">🥧 Torta</label>
+            <input type="radio" id="torta" name="tipo" value="torta" required><br><br>
+
+            <label for="salgado">🥐 Salgado</label>
+            <input type="radio" id="salgado" name="tipo" value="salgado" required><br><br>
+
+            <label for="sabores">Sabor/Recheio</label>
+            <select id="sabores" name="sabores">
+              <option value="Selecionar">Selecione um sabor</option>
+              <option value="chocolate">🍫 Chocolate</option>
+              <option value="morango">🍓 Morango</option>
+              <option value="baunilha">🍯 Baunilha</option>
+              <option value="doce de leite">🥮 Doce de Leite</option>
+              <option value="limão">🍋 Limão</option>
+              <option value="creme">🍮 Creme</option>
+              
+            </select><br><br>
+
+            <p>Tamanhos:</p>
+            <label for="pequeno">Pequeno</label>
+            <input type="radio" id="pequeno" name="tamanho" value="pequeno"><br><br>
+
+            <label for="medio">Médio</label>
+            <input type="radio" id="medio" name="tamanho" value="medio"><br><br>
+
+            <label for="grande">Grande</label>
+            <input type="radio" id="grande" name="tamanho" value="grande"><br><br>
+            
+            <label for="DataEntrega">Data de Entrega</label>
+            <input type="date" id="DataEntrega" name="data" required><br><br>
+        </fieldset><br><br>
+
+
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <label for="Obs">Informações Especiais</label><br><br>
+            <textarea id="Obs" name="obs"></textarea><br><br>
+
+            <label for="orcamento">Orçamento maximo (R$)</label>
+            <input type="number" id="orcamento" name="orcamento" min="1.00" step="0.01">
+
+        </fieldset>
+
+        <input type="submit" value="Enviar Pedido">
+        
+    </form>
+
+     <p><a href="padaria.html">⬅️ Voltar ao site principal</a></p>
+
+</body>
+</html>

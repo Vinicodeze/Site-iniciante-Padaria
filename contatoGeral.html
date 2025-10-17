@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="geral.css">
+    <title>Fale conosco</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fale conosco</h1>
+        <p>Aqui é onde você pode tirar suas duvidas e muito mais</p>
+    </header>
+    
+    <form action="processa_formulario.php" method="post">
+        <fieldset>
+             <legend>Informações pessoais</legend>
+             
+             <label for="nome">Nome</label>
+             <input type="text" id="nome" name="nome" required><br><br>
+
+             <label for="email">E-mail</label>
+             <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required><br><br>
+
+             <label for="telefone">Telefone</label>
+             <input type="tel" id="telefone" name="telefone"  pattern="[0-9]{10,11}" placeholder="(xx)xxxxxxxxx"><br><br>
+
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+                <option>ℹ️ Informações gerais</option>
+                <option>⚠️ Reclamação</option>
+                <option>💡 Sugestão</option>
+                <option>🌟 Elogio</option>
+                <option>🎂 Pedido especial</option>
+                <option>❓ Outros</option>
+            </select><br><br>
+
+            <label for="mensagem">Mensagem
+                <textarea id="mensagem" name="mensagem" minlength="10" required></textarea>
+            </label>
+            
+            <input type="submit" value="Enviar mensagem">
+        </fieldset>
+    </form>
+
+    <p><a href="padaria.html">⬅️ Voltar ao site principal</a></p>
+</body>
+</html>
