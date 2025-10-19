@@ -38,6 +38,32 @@ header p{
     font-weight: bold;
 }
 
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.main-nav a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.main-nav{
+    margin: 10px 0;
+}
+
 legend{
     font-weight: bold;
     color: var(--primary-color);

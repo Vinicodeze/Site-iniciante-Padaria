@@ -32,6 +32,32 @@ header h1{
     font-size: 36px;
     margin-bottom: 5px;
 }
+
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.main-nav a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.main-nav{
+    margin: 10px 0;
+}
    
 form{
     background-color: var(--highlight-bg);
@@ -109,14 +135,3 @@ input[type="submit"]:hover {
     transform: scale(1.03);
 }
 
-a{
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    
-}
-
-a:hover{
-    color: var(--secondary-color);
-    text-decoration: underline;
-}

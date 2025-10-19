@@ -33,6 +33,32 @@ header h1{
     margin-bottom: 5px;
 }
 
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.main-nav a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.main-nav{
+    margin: 10px 0;
+}
+
 header p{
     font-weight: bold;
 }
@@ -122,16 +148,5 @@ select:focus{
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 6px var(--primary-color);
-}
-
-p a{
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-p a:hover{
-    text-decoration: underline;
-    cursor: pointer;
 }
 
