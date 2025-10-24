@@ -99,6 +99,7 @@ h3{
     box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.1);
     color: var(--text-color);
     max-width: 900px;
+    
 
 }
 
@@ -238,7 +239,37 @@ footer{
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: var(--text-color);
+    color: white;
     font-size: 20px;
+    background-color: var(--text-color);
+    width: 100vw;
+    padding: 15px;
+    height: 120px;
+    margin: 0;
+    
+}
+
+
+.botaoWhats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botaoWhat{
+    transform: scale(1.1);
 }
 
