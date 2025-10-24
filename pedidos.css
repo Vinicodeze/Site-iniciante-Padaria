@@ -2,8 +2,7 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
+   box-sizing: border-box;
 }
 
 :root {
@@ -139,5 +138,4 @@ input[type="submit"]:hover {
     background-color: var(--secondary-color);
     transform: scale(1.03);
 }
-
 
