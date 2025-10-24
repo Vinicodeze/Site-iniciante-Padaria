@@ -38,15 +38,29 @@ Padaria-Pao-de-Mel/
 ├── Feedback.html
 ├── cadastro.html
 ├── contatoGeral.html
+├── produtos.html
 ├── *.css (arquivos de estilo das páginas)
 │
 ├── imagens/
-│ ├── suco de laranja.avif
-│ ├── artesanal.avif
-│ ├── pudim.avif
-│ ├── forno.avif
-│ ├── equipe.avif
-│ └── fachada.avif
+│   ├── suco de laranja.avif
+│   ├── artesanal.avif
+│   ├── pudim.avif
+│   ├── forno.avif
+│   ├── equipe.avif
+│   └── fachada.avif
+├── bebidas/
+│   ├── coca cola.avif
+│   ├── vitamina de açai.avif
+│   └── cafe.avif
+├── bolos/
+│   ├── bolo de cenoura.avif
+│   ├── bolo de milho.avif
+│   ├── bolo de leite ninho.avif
+│   └── bolo de chocolate.avif
+├── paes/
+│   ├── pao na chapa.avif
+│   ├── pao de hamburguer.avif
+│   └── americano com ovo.avif
 │
 ├── videos/
 │ └── 14477212_2160_3840_30fps.mp4
