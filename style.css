@@ -62,6 +62,10 @@
     background-color: var(--primary-color);
 }
 
+.main-nav.active {
+    display: block;
+}
+
 .main-nav ul {
     list-style: none;
     padding: 0;
