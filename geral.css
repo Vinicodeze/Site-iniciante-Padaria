@@ -33,12 +33,25 @@ header h1{
 }
 
 .menu-toggle {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle {
     font-size: 24px;
     background: none;
     border: none;
     color: var(--primary-color);
     cursor: pointer;
 }
+
 
 .main-nav {
     display: none;

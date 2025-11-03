@@ -36,6 +36,7 @@ header p{
     border: none;
     color: var(--primary-color);
     cursor: pointer;
+    align-self: center; 
 }
 
 .main-nav {
@@ -66,6 +67,18 @@ header p{
 
 .main-nav a:hover {
     background-color: var(--text-color);
+}
+
+.menu-toggle {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 /*Menu visivel em telas grandes */
