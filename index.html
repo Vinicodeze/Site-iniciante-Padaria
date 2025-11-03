@@ -12,6 +12,7 @@
     <header class="main-header">
         <img src="imagens/LOGO.png" alt="logo" class="main-logo">
         <h1>Padaria Pão de Mel</h1>
+        <button class="menu-toggle" aria-label="abrir menu"></button>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -66,72 +67,74 @@
         <section>
             <article>
                 <h3>Nossos melhores produtos!</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Categoria</th>
-                            <th>Produtos</th>
-                            <th>Descrição Breve</th>
-                            <th>Preço (R$)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pães</td>
-                            <td>Pão Francês</td>
-                            <td>Tradicional pão crocante por fora e macio por dentro</td>
-                            <td>0,80</td>
-                        </tr>
-                        <tr>
-                            <td>Pães</td>
-                            <td>Pão Integral</td>
-                            <td>Feito com farinha integral, ideal para dietas saudáveis</td>
-                            <td>1,20</td>
-                        </tr>
-                        <tr>
-                            <td>Doces</td>
-                            <td>Bolo de Cenoura</td>
-                            <td>Coberto com calda de chocolate caseira</td>
-                            <td>5,00</td>
-                        </tr>
-                        <tr>
-                            <td>Doces</td>
-                            <td>Pudim de Leite</td>
-                            <td>Clássico pudim com calda de caramelo</td>
-                            <td>6,50</td>
-                        </tr>
-                        <tr>
-                            <td>Salgados</td>
-                            <td>Empada de Palmito</td>
-                            <td>Massa amanteigada com recheio cremoso de palmito</td>
-                            <td>6,00</td>
-                        </tr>
-                        <tr>
-                            <td>Bebidas</td>
-                            <td>Café Expresso</td>
-                            <td>Café forte e encorpado, servido na hora</td>
-                            <td>3,00</td>
-                        </tr>
-                        <tr>
-                            <td>Bebidas</td>
-                            <td>Suco Natural de Laranja</td>
-                            <td>Feito com laranjas frescas, sem conservantes</td>
-                            <td>5,00</td>
-                        </tr>
-                        <tr>
-                            <td>Sanduíches</td>
-                            <td>Misto Quente</td>
-                            <td>Pão de forma com presunto e queijo, tostado na chapa</td>
-                            <td>7,00</td>
-                        </tr>
-                        <tr>
-                            <td>Sanduíches</td>
-                            <td>Hambúrguer Artesanal</td>
-                            <td>Pão, hambúrguer bovino, queijo, alface e tomate</td>
-                            <td>15,00</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div>
+                    <table class="table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Produtos</th>
+                                <th>Descrição Breve</th>
+                                <th>Preço (R$)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pães</td>
+                                <td>Pão Francês</td>
+                                <td>Tradicional pão crocante por fora e macio por dentro</td>
+                                <td>0,80</td>
+                            </tr>
+                            <tr>
+                                <td>Pães</td>
+                                <td>Pão Integral</td>
+                                <td>Feito com farinha integral, ideal para dietas saudáveis</td>
+                                <td>1,20</td>
+                            </tr>
+                            <tr>
+                                <td>Doces</td>
+                                <td>Bolo de Cenoura</td>
+                                <td>Coberto com calda de chocolate caseira</td>
+                                <td>5,00</td>
+                            </tr>
+                            <tr>
+                                <td>Doces</td>
+                                <td>Pudim de Leite</td>
+                                <td>Clássico pudim com calda de caramelo</td>
+                                <td>6,50</td>
+                            </tr>
+                            <tr>
+                                <td>Salgados</td>
+                                <td>Empada de Palmito</td>
+                                <td>Massa amanteigada com recheio cremoso de palmito</td>
+                                <td>6,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bebidas</td>
+                                <td>Café Expresso</td>
+                                <td>Café forte e encorpado, servido na hora</td>
+                                <td>3,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bebidas</td>
+                                <td>Suco Natural de Laranja</td>
+                                <td>Feito com laranjas frescas, sem conservantes</td>
+                                <td>5,00</td>
+                            </tr>
+                            <tr>
+                                <td>Sanduíches</td>
+                                <td>Misto Quente</td>
+                                <td>Pão de forma com presunto e queijo, tostado na chapa</td>
+                                <td>7,00</td>
+                            </tr>
+                            <tr>
+                                <td>Sanduíches</td>
+                                <td>Hambúrguer Artesanal</td>
+                                <td>Pão, hambúrguer bovino, queijo, alface e tomate</td>
+                                <td>15,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <h3>Imagens ilustrativas</h3>
                 <div class="galeria">
@@ -159,7 +162,7 @@
         <section>
             <h2>Vídeo da Padaria</h2>
             <p>Confira um pouco do nosso dia a dia e veja como preparamos os melhores produtos da cidade!</p>
-            <video width="400" height="250" controls class="video-padaria">
+            <video width="400" height="250" controls class="video-padaria" loading="lazy">
                 <source src="videos/14477212_2160_3840_30fps.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos.
             </video>
@@ -175,23 +178,26 @@
 
         <section class="funcionamento">
             <h3>Horários de Funcionamento</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dias da Semana</th>
-                        <th>Horários</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Segunda</td><td>08:00 - 18:00</td></tr>
-                    <tr><td>Terça</td><td>08:00 - 18:00</td></tr>
-                    <tr><td>Quarta</td><td>08:00 - 18:00</td></tr>
-                    <tr><td>Quinta</td><td>08:00 - 18:00</td></tr>
-                    <tr><td>Sexta</td><td>08:00 - 18:00</td></tr>
-                    <tr><td>Sábado</td><td>08:00 - 14:00</td></tr>
-                    <tr><td>Domingo</td><td>08:00 - 14:30</td></tr>
-                </tbody>
-            </table>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dias da Semana</th>
+                            <th>Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Segunda</td><td>08:00 - 18:00</td></tr>
+                        <tr><td>Terça</td><td>08:00 - 18:00</td></tr>
+                        <tr><td>Quarta</td><td>08:00 - 18:00</td></tr>
+                        <tr><td>Quinta</td><td>08:00 - 18:00</td></tr>
+                        <tr><td>Sexta</td><td>08:00 - 18:00</td></tr>
+                        <tr><td>Sábado</td><td>08:00 - 14:00</td></tr>
+                        <tr><td>Domingo</td><td>08:00 - 14:30</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
             
     </main>
