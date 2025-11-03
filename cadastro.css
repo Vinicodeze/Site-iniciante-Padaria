@@ -37,30 +37,63 @@ header p{
     font-weight: bold;
 }
 
-.main-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav a{
-    text-decoration: none;
-    color: var(--text-color);
-    transition: 0.3s ease;
-    font-weight: bold;
-}
-
-.main-nav a:hover{
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
     color: var(--primary-color);
     cursor: pointer;
 }
 
-.main-nav{
-    margin: 10px 0;
+.main-nav {
+    display: none;
+    background-color: var(--primary-color);
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    border-top: 1px solid var(--secondary-color);
+}
+
+.main-nav a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: var(--text-color);
+}
+
+/*Menu visivel em telas grandes */
+
+@media(min-width: 768px){
+    .menu-toggle{
+        display: none;
+    }
+
+    .main-nav{
+        display: block;
+    }
+
+    .main-nav ul{
+        display: flex;
+        gap: 20px;
+    }
+
+    .main-nav li{
+        border: none;
+    }
+
+    .main-nav a{
+        padding: 10px 15px;
+    }
 }
 
 legend{
@@ -135,5 +168,83 @@ input[type="submit"]:hover {
     transform: scale(1.03);
 }
 
+/*aqui vao estar todos codigos responsivos*/
 
+@media(max-width: 767px){
+    header h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    .main-nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 
+@media(max-width: 767px){
+    form, fieldset {
+        width: 90%;
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 14px;
+        height: 40px;
+    }
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width: 1024px){
+    .produtos-container {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-left: 0;
+    }
+    .produto {
+        width: 90%;
+        padding: 10px;
+    }
+    .produto img {
+        height: 200px;
+    }
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media(max-width: 767px){
+    footer {
+        flex-direction: column;
+        font-size: 16px;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(24px, 5vw, 36px);
+}
