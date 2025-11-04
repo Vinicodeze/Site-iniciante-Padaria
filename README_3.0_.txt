@@ -40,6 +40,7 @@ Padaria-Pao-de-Mel/
 ├── contatoGeral.html
 ├── produtos.html
 ├── *.css (arquivos de estilo das páginas)
+├── script.js 
 │
 ├── imagens/
 │   ├── suco de laranja.avif
