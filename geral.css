@@ -12,6 +12,15 @@
     --highlight-bg: #f0f7ff;
 }
 
+html, body {
+    height: 100%;
+}
+
+
+main {
+    flex: 1;
+}
+
 body{
     font-size: 16px;
     color: var(--text-color);
@@ -19,12 +28,18 @@ body{
     line-height: 1.6;
     background-color: var(--bg-color);
     font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header{
-    text-align: center;
-    margin-bottom: 30px;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
 }
+
 
 header h1{
     color: var(--primary-color);
@@ -32,17 +47,9 @@ header h1{
     margin-bottom: 5px;
 }
 
-.menu-toggle {
-  display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
+
+
+
 
 .menu-toggle {
     font-size: 24px;
@@ -111,6 +118,24 @@ header h1{
 header p{
     font-weight: bold;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px;
+    margin: 0;
+    color: var(--text-color);
+}
+
 
 legend{
     font-weight: bold;
@@ -199,6 +224,128 @@ select:focus{
     box-shadow: 0 0 6px var(--primary-color);
 }
 
+footer {
+    width: 100%;
+    color: white;
+}
+
+.footer-link{ text-decoration: none; }
+
+#footer_content {
+    background-color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts { margin-bottom: 0.75rem; }
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link i{ font-size: 1.25rem; }
+
+#footer_social_media .footer-link:hover{ opacity: 0.8; }
+
+#instagram{ background: linear-gradient(#7f37c9, #ff2992, #ff9807); }
+#facebook{ background-color: #4267b3; }
+#whatsapp{ background-color: #22d366; }
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: white;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover { color: #7f37c9; }
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{ color: white; }
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{ opacity: 0.8; }
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100%;
+}
+
+.main-logo {
+    width: 120px;
+    max-width: 30%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    #footer_content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content{
+        grid-template-columns: 1fr;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+    #footer_social_media{ justify-content: center; }
+}
+
+
 /*aqui vao estar todos codigos responsivos*/
 
 @media(max-width: 767px){
@@ -262,14 +409,6 @@ select:focus{
     }
 }
 
-@media(max-width: 767px){
-    footer {
-        flex-direction: column;
-        font-size: 16px;
-        height: auto;
-        padding: 20px;
-    }
-}
 
 img {
     max-width: 100%;
