@@ -34,7 +34,6 @@ Estrutura do Projeto
 
 Padaria-Pao-de-Mel/
 ├── padaria.html
-├── Pedidos.html
 ├── Feedback.html
 ├── cadastro.html
 ├── contatoGeral.html
