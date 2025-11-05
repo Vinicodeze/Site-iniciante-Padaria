@@ -77,6 +77,69 @@ header p{
     color: var(--primary-color);
 }
 
+#pedido_section{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+#pedido label{
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#pedido select,
+#pedido input{
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #0077FF;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#pedido button{
+    width: 100%;
+    padding: 10px;
+    background-color: #0077FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#pedido button :hover{
+    background-color: #0055CC;
+}
+
+#carrinho{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 2px solid #0077FF;
+    border-radius: 8px;
+}
+
+#carrinho h4{
+    margin-bottom: 10px;
+    color: #0077FF;
+}
+
+#resultado{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 2px solid #0077FF;
+    border-radius: 8px;
+}
+
+#resultado p{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
 
 /*Menu visivel em telas grandes */
 
